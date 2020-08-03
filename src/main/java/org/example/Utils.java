@@ -17,7 +17,7 @@ public class Utils {
     public static Double extractDoubleFromString(String s){
         //Pattern p = Pattern.compile("\\d+.+");
         s=s.replace(""+new DecimalFormatSymbols().getDecimalSeparator(),"");
-        Pattern p = Pattern.compile("\\d+.\\d++");
+        Pattern p = Pattern.compile("\\d+.\\d++") ;
         Matcher m = p.matcher(s);
         Double doublePrice = null;
         while (m.find()){
