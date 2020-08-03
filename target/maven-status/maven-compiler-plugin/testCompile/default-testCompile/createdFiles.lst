@@ -1,0 +1,8 @@
+testcases/MyTests.class
+page_objects/MainPage.class
+page_objects/HomeAndDecorPage.class
+page_objects/MainPage$Language.class
+testcases/BaseTest.class
+page_objects/ElectronicsPage$Items.class
+page_objects/ElectronicsPage.class
+page_objects/ElectronicsPage$Sort.class
