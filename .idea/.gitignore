@@ -1,2 +1,6 @@
 # Default ignored files
 /workspace.xml
+/.allure/
+/.idea/
+*.iml
+/allure-results/

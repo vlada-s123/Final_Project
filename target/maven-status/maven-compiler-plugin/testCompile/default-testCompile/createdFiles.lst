@@ -1,8 +1,13 @@
+page_objects/WishListPage.class
+page_objects/SalePage.class
+page_objects/ElectronicsPage.class
+page_objects/ElectronicsPage$Sort.class
+page_objects/RegistrationPage.class
 testcases/MyTests.class
 page_objects/MainPage.class
+page_objects/MainPage$Items.class
 page_objects/HomeAndDecorPage.class
 page_objects/MainPage$Language.class
 testcases/BaseTest.class
-page_objects/ElectronicsPage$Items.class
-page_objects/ElectronicsPage.class
-page_objects/ElectronicsPage$Sort.class
+page_objects/LoginPage.class
+page_objects/CartPage.class

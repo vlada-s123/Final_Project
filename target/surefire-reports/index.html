@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-TestSuite">
-              <span class="suite-name border-failed">TestSuite</span>
+              <span class="suite-name border-passed">TestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-TestSuite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,31 +91,51 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 3 failed,   </span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-TestSuite" class="hide-methods failed suite-TestSuite"> (hide)</a> <!-- hide-methods failed suite-TestSuite -->
-                      <a href="#" panel-name="suite-TestSuite" class="show-methods failed suite-TestSuite"> (show)</a> <!-- show-methods failed suite-TestSuite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods passed suite-TestSuite"> (hide)</a> <!-- hide-methods passed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods passed suite-TestSuite"> (show)</a> <!-- show-methods passed suite-TestSuite -->
                     </span>
-                    <div class="method-list-content failed suite-TestSuite">
+                    <div class="method-list-content passed suite-TestSuite">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testcases.MyTests" hash-for-method="addToWishList">addToWishList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testcases.MyTests" hash-for-method="checkItemsCounter">checkItemsCounter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testcases.MyTests" hash-for-method="checkShowSelect">checkShowSelect</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testcases.MyTests" hash-for-method="priceFilter">priceFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testcases.MyTests" hash-for-method="sale">sale</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testcases.MyTests" hash-for-method="shoppingCart">shoppingCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="testcases.MyTests" hash-for-method="sortBy">sortBy</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-TestSuite -->
+                    </div> <!-- method-list-content passed suite-TestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -127,41 +147,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestSuite" class="panel TestSuite">
-          <div class="suite-TestSuite-class-failed">
+          <div class="suite-TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testcases.MyTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="addToWishList">
+                  </a> <!-- addToWishList -->
+                  <span class="method-name">addToWishList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="checkItemsCounter">
                   </a> <!-- checkItemsCounter -->
                   <span class="method-name">checkItemsCounter</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
-  (Session info: chrome=84.0.4147.105)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Air-Vlada.local&apos;, ip: &apos;fe80:0:0:0:14c1:35da:5cae:2ebd%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /var/folders/3k/9j_mk7k93gd...}, goog:chromeOptions: {debuggerAddress: localhost:49447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f96115f1ba4d12e6933b385ba76a901d
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.isSelected(RemoteWebElement.java:146)
-	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:310)
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:116)
-	at page_objects.MainPage.setLanguage(MainPage.java:41)
-	at testcases.MyTests.checkItemsCounter(MyTests.java:16)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -169,31 +172,27 @@ Session ID: f96115f1ba4d12e6933b385ba76a901d
                   <a name="checkShowSelect">
                   </a> <!-- checkShowSelect -->
                   <span class="method-name">checkShowSelect</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
-  (Session info: chrome=84.0.4147.105)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Air-Vlada.local&apos;, ip: &apos;fe80:0:0:0:14c1:35da:5cae:2ebd%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /var/folders/3k/9j_mk7k93gd...}, goog:chromeOptions: {debuggerAddress: localhost:49444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 91a500143dc5e2b6e0659be2006e1171
-*** Element info: {Using=id, value=select-language}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at page_objects.MainPage.setLanguage(MainPage.java:40)
-	at testcases.MyTests.checkShowSelect(MyTests.java:26)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="priceFilter">
+                  </a> <!-- priceFilter -->
+                  <span class="method-name">priceFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sale">
+                  </a> <!-- sale -->
+                  <span class="method-name">sale</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shoppingCart">
+                  </a> <!-- shoppingCart -->
+                  <span class="method-name">shoppingCart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -201,35 +200,10 @@ Session ID: 91a500143dc5e2b6e0659be2006e1171
                   <a name="sortBy">
                   </a> <!-- sortBy -->
                   <span class="method-name">sortBy</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
-  (Session info: chrome=84.0.4147.105)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Air-Vlada.local&apos;, ip: &apos;fe80:0:0:0:14c1:35da:5cae:2ebd%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /var/folders/3k/9j_mk7k93gd...}, goog:chromeOptions: {debuggerAddress: localhost:49441}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b2105f57299887cf1eb6362c9e6d8d4c
-*** Element info: {Using=id, value=select-language}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at page_objects.MainPage.setLanguage(MainPage.java:40)
-	at testcases.MyTests.sortBy(MyTests.java:36)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestSuite-class-failed -->
+          </div> <!-- suite-TestSuite-class-passed -->
         </div> <!-- panel TestSuite -->
         <div panel-name="test-xml-TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -239,25 +213,12 @@ Session ID: b2105f57299887cf1eb6362c9e6d8d4c
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite verbose=&quot;0&quot; name=&quot;TestSuite&quot; parallel=&quot;methods&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;TestSuite&quot; parallel=&quot;methods&quot;&gt;
   &lt;test name=&quot;myTests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.MyTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- myTests --&gt;
-  &lt;test name=&quot;myTests(failed)&quot; parallel=&quot;methods&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testcases.MyTests&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;checkShowSelect&quot;/&gt;
-          &lt;include name=&quot;sortBy&quot;/&gt;
-          &lt;include name=&quot;tearDown&quot;/&gt;
-          &lt;include name=&quot;checkItemsCounter&quot;/&gt;
-          &lt;include name=&quot;navigate&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testcases.MyTests --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- myTests(failed) --&gt;
 &lt;/suite&gt; &lt;!-- TestSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -270,9 +231,6 @@ Session ID: b2105f57299887cf1eb6362c9e6d8d4c
             <ul>
               <li>
                 <span class="test-name">myTests (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">myTests(failed) (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -298,24 +256,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkItemsCounter')
+data.setCell(0, 1, 'shoppingCart')
 data.setCell(0, 2, 'testcases.MyTests')
-data.setCell(0, 3, 435);
+data.setCell(0, 3, 21615);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkShowSelect')
+data.setCell(1, 1, 'addToWishList')
 data.setCell(1, 2, 'testcases.MyTests')
-data.setCell(1, 3, 262);
+data.setCell(1, 3, 19762);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'sortBy')
 data.setCell(2, 2, 'testcases.MyTests')
-data.setCell(2, 3, 261);
+data.setCell(2, 3, 13317);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'priceFilter')
+data.setCell(3, 2, 'testcases.MyTests')
+data.setCell(3, 3, 12292);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkShowSelect')
+data.setCell(4, 2, 'testcases.MyTests')
+data.setCell(4, 3, 9357);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkItemsCounter')
+data.setCell(5, 2, 'testcases.MyTests')
+data.setCell(5, 3, 6906);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'sale')
+data.setCell(6, 2, 'testcases.MyTests')
+data.setCell(6, 3, 5521);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 958 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -346,49 +320,85 @@ return data;
                 <span class="method-name">navigate</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addToWishList</span>
+                <span class="method-start">11161 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=addToWishList status=SUCCESS method=MyTests.addToWishList()[pri:0, instance:testcas...)</span>
+                <span class="method-start">30942 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">navigate</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">navigate</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">31251 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">checkShowSelect</span>
-                <span class="method-start">17616 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">sortBy</span>
-                <span class="method-start">17618 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">checkItemsCounter</span>
-                <span class="method-start">17626 ms</span>
+                <span class="method-start">37421 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDown</span>
-                <span class="method-start">17963 ms</span>
+                <span class="method-name">tearDown([TestResult name=checkItemsCounter status=SUCCESS method=MyTests.checkItemsCounter()[pri:0, instance...)</span>
+                <span class="method-start">44329 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">navigate</span>
+                <span class="method-start">44625 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkShowSelect</span>
+                <span class="method-start">49767 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDown</span>
-                <span class="method-start">17974 ms</span>
+                <span class="method-name">tearDown([TestResult name=checkShowSelect status=SUCCESS method=MyTests.checkShowSelect()[pri:0, instance:tes...)</span>
+                <span class="method-start">59125 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">navigate</span>
+                <span class="method-start">59473 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">priceFilter</span>
+                <span class="method-start">64647 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDown</span>
-                <span class="method-start">18067 ms</span>
+                <span class="method-name">tearDown([TestResult name=priceFilter status=SUCCESS method=MyTests.priceFilter()[pri:0, instance:testcases.M...)</span>
+                <span class="method-start">76940 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">navigate</span>
+                <span class="method-start">77200 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sale</span>
+                <span class="method-start">82117 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=sale status=SUCCESS method=MyTests.sale()[pri:0, instance:testcases.MyTests@3b7ff80...)</span>
+                <span class="method-start">87639 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">navigate</span>
+                <span class="method-start">87901 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shoppingCart</span>
+                <span class="method-start">92687 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=shoppingCart status=SUCCESS method=MyTests.shoppingCart()[pri:0, instance:testcases...)</span>
+                <span class="method-start">114303 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">navigate</span>
+                <span class="method-start">114533 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sortBy</span>
+                <span class="method-start">120273 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=sortBy status=SUCCESS method=MyTests.sortBy()[pri:0, instance:testcases.MyTests@3b7...)</span>
+                <span class="method-start">133592 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

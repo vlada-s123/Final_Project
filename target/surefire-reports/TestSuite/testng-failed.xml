@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [TestSuite]" parallel="methods">
+<suite thread-count="1" verbose="0" name="Failed suite [TestSuite]" parallel="methods">
   <test name="myTests">
     <classes>
       <class name="testcases.MyTests"/>
     </classes>
   </test> <!-- myTests -->
-  <test name="myTests(failed)" parallel="methods">
-    <classes>
-      <class name="testcases.MyTests">
-        <methods>
-          <include name="checkShowSelect"/>
-          <include name="sortBy"/>
-          <include name="tearDown"/>
-          <include name="checkItemsCounter"/>
-          <include name="navigate"/>
-        </methods>
-      </class> <!-- testcases.MyTests -->
-    </classes>
-  </test> <!-- myTests(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

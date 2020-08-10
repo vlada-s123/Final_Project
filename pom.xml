@@ -60,7 +60,7 @@
           <version>${maven-surefire-plugin.version}</version>
           <configuration>
             <suiteXmlFiles>TestSuit.xml</suiteXmlFiles>
-            <reportVersion>2.6.0</reportVersion>
+            <!--<reportVersion>2.6.0</reportVersion>-->
             <testFailureIgnore>true</testFailureIgnore>
             <argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
             <systemProperties>
@@ -78,5 +78,15 @@
         </plugin>
       </plugins>
     </pluginManagement>
+      <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <configuration>
+                  <source>8</source>
+                  <target>8</target>
+              </configuration>
+          </plugin>
+      </plugins>
   </build>
 </project>

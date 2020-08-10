@@ -49,9 +49,10 @@ public class DriverManager{
         threadDriver.get().manage().timeouts().pageLoadTimeout(18, TimeUnit.SECONDS);
         threadDriver.get().manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
     }
-     public static void killDriver(){
+         public static void killDriver(){
         threadDriver.get().close();
          threadDriver.get().quit();
          threadDriver.remove();
     }
+
 }
